@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ref = Database.database().reference()
+       // ref = Database.database().reference()
         
                 if Auth.auth().currentUser != nil {
                     performSegue(withIdentifier: clientSegue, sender: self)
@@ -52,6 +52,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: Any) {
+         
+        
+        if (UITextField.validateAll(textFields: [emailEnterTextField, passwordEnterTextField,userNameText,businessSector,businessState,businessYears,experience,gender,ethnicity])) {
         let email = emailEnterTextField.text!
         let password = passwordEnterTextField.text!
         let userName = userNameText.text!
@@ -65,12 +68,15 @@ class ViewController: UIViewController {
         
 
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            
             let userId = (Auth.auth().currentUser?.uid)!
-            ref.child("Users").child(userId).setValue(["userName:" : userName, "businessSector": sector, "state":state, "city":city, "busYears":busYears, "expYears":expYears, "gender":gend, "ethnicity":ethnic])
-            
+            ref.child("Users").child(userId).setValue(["userName": userName, "businessSector": sector, "state":state, "city":city, "busYears":busYears, "expYears":expYears, "gender":gend, "ethnicity":ethnic])
         }
     
+        }else{
+            prompt(with: "A Form Field is empty", in: self)
+        
+
+        }
     
         performSegue(withIdentifier: clientSegue, sender: self)
     
@@ -102,4 +108,5 @@ class ViewController: UIViewController {
     
 
 }
+
 

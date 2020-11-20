@@ -19,6 +19,8 @@
 		F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */; };
 		F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AD625671FE000B8122A /* PopUpInputVC.swift */; };
 		F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AD92567218B00B8122A /* ClientTableViewController.swift */; };
+		F6100ADD25674B6100B8122A /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADC25674B6100B8122A /* Prompts.swift */; };
+		F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */; };
 		FDB28C9904BAEAD348F80E09 /* Pods_Pricing_Right.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924B8F6A722EF5E43649E6CD /* Pods_Pricing_Right.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		F6100AD425671F8000B8122A /* One_dance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = One_dance.ttf; sourceTree = "<group>"; };
 		F6100AD625671FE000B8122A /* PopUpInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpInputVC.swift; sourceTree = "<group>"; };
 		F6100AD92567218B00B8122A /* ClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewController.swift; sourceTree = "<group>"; };
+		F6100ADC25674B6100B8122A /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
+		F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNilExtenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		F6100A512565E4F500B8122A /* Pricing Right */ = {
 			isa = PBXGroup;
 			children = (
+				F6100AE22567AFE300B8122A /* SupportFiles */,
 				F6100A522565E4F500B8122A /* AppDelegate.swift */,
 				F6100A542565E4F500B8122A /* SceneDelegate.swift */,
 				F6100AD525671FA600B8122A /* Controller */,
@@ -120,11 +125,20 @@
 		F6100AD525671FA600B8122A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */,
 				F6100A562565E4F500B8122A /* ViewController.swift */,
+				F6100ADC25674B6100B8122A /* Prompts.swift */,
 				F6100AD92567218B00B8122A /* ClientTableViewController.swift */,
 				F6100AD625671FE000B8122A /* PopUpInputVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F6100AE22567AFE300B8122A /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +280,8 @@
 				F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */,
 				F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */,
 				F6100A552565E4F500B8122A /* SceneDelegate.swift in Sources */,
+				F6100ADD25674B6100B8122A /* Prompts.swift in Sources */,
+				F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */,
 				F6100AAA2566A85C00B8122A /* Global variables.swift in Sources */,
 				F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */,
 			);

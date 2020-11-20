@@ -11,20 +11,25 @@ import Firebase
 
 class ClientTableViewController: UITableViewController {
     
-   //var userId = String()
-    let viewController = PopUpInPutVC()
+   
+    let popViewController = PopUpInPutVC()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userId = (Auth.auth().currentUser)
-        print(userId?.email)
+       
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+        
+        
     }
 
     // MARK: - Table view data source
@@ -41,7 +46,22 @@ class ClientTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        
+        
         let cell = Bundle.main.loadNibNamed("ClientsTableViewCell", owner: self, options: nil)?.first as! ClientsTableViewCell
+        
+        let userID = Auth.auth().currentUser?.uid
+        ref.child(userID!).child("Clients").observeSingleEvent(of: .value, with: { (snapshot) in
+          // Get user value
+          let value = snapshot.value as? NSArray
+          print(value)
+
+          // ...
+          }) { (error) in
+            print(error.localizedDescription)
+        }
         
         
         cell.cityLabel.text = "test 1"
@@ -59,12 +79,11 @@ class ClientTableViewController: UITableViewController {
     
     
     @IBAction func addClients(_ sender: UIBarButtonItem) {
-        let popupController = STPopupController(rootViewController: viewController)
+        
+        
+        let popupController = STPopupController(rootViewController: popViewController)
         popupController.style = .bottomSheet
         popupController.present(in: self)
-        
-   //print(userId)
-    
     }
     
     
