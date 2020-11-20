@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,19 @@
 		F6100A5A2565E4F500B8122A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6100A582565E4F500B8122A /* Main.storyboard */; };
 		F6100A5C2565E4F700B8122A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6100A5B2565E4F700B8122A /* Assets.xcassets */; };
 		F6100A5F2565E4F700B8122A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6100A5D2565E4F700B8122A /* LaunchScreen.storyboard */; };
+		F6100A842565E9F500B8122A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6100A832565E9F500B8122A /* GoogleService-Info.plist */; };
+		F6100AAA2566A85C00B8122A /* Global variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AA92566A85C00B8122A /* Global variables.swift */; };
+		F6100AAF25671F6100B8122A /* ClientsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6100AAD25671F6000B8122A /* ClientsTableViewCell.xib */; };
+		F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */; };
+		F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AD625671FE000B8122A /* PopUpInputVC.swift */; };
+		F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AD92567218B00B8122A /* ClientTableViewController.swift */; };
+		FDB28C9904BAEAD348F80E09 /* Pods_Pricing_Right.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924B8F6A722EF5E43649E6CD /* Pods_Pricing_Right.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		265684FB411FD8CE45C52C70 /* Pods-Pricing Right.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pricing Right.debug.xcconfig"; path = "Target Support Files/Pods-Pricing Right/Pods-Pricing Right.debug.xcconfig"; sourceTree = "<group>"; };
+		46A1889FEF912BAF0A70158E /* Pods-Pricing Right.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pricing Right.release.xcconfig"; path = "Target Support Files/Pods-Pricing Right/Pods-Pricing Right.release.xcconfig"; sourceTree = "<group>"; };
+		924B8F6A722EF5E43649E6CD /* Pods_Pricing_Right.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pricing_Right.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6100A4F2565E4F500B8122A /* Pricing Right.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pricing Right.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6100A522565E4F500B8122A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6100A542565E4F500B8122A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,13 @@
 		F6100A5B2565E4F700B8122A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6100A5E2565E4F700B8122A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6100A602565E4F700B8122A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6100A832565E9F500B8122A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6100AA92566A85C00B8122A /* Global variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global variables.swift"; sourceTree = "<group>"; };
+		F6100AAD25671F6000B8122A /* ClientsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientsTableViewCell.xib; sourceTree = "<group>"; };
+		F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsTableViewCell.swift; sourceTree = "<group>"; };
+		F6100AD425671F8000B8122A /* One_dance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = One_dance.ttf; sourceTree = "<group>"; };
+		F6100AD625671FE000B8122A /* PopUpInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpInputVC.swift; sourceTree = "<group>"; };
+		F6100AD92567218B00B8122A /* ClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB28C9904BAEAD348F80E09 /* Pods_Pricing_Right.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E2622B1F43E60C3B7931A87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				265684FB411FD8CE45C52C70 /* Pods-Pricing Right.debug.xcconfig */,
+				46A1889FEF912BAF0A70158E /* Pods-Pricing Right.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D46974CC96E31E5C335CAF00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				924B8F6A722EF5E43649E6CD /* Pods_Pricing_Right.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6100A462565E4F500B8122A = {
 			isa = PBXGroup;
 			children = (
 				F6100A512565E4F500B8122A /* Pricing Right */,
 				F6100A502565E4F500B8122A /* Products */,
+				0E2622B1F43E60C3B7931A87 /* Pods */,
+				D46974CC96E31E5C335CAF00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +95,36 @@
 			children = (
 				F6100A522565E4F500B8122A /* AppDelegate.swift */,
 				F6100A542565E4F500B8122A /* SceneDelegate.swift */,
-				F6100A562565E4F500B8122A /* ViewController.swift */,
-				F6100A582565E4F500B8122A /* Main.storyboard */,
+				F6100AD525671FA600B8122A /* Controller */,
+				F6100AAC25671F4400B8122A /* View */,
+				F6100AA92566A85C00B8122A /* Global variables.swift */,
 				F6100A5B2565E4F700B8122A /* Assets.xcassets */,
+				F6100AD425671F8000B8122A /* One_dance.ttf */,
 				F6100A5D2565E4F700B8122A /* LaunchScreen.storyboard */,
 				F6100A602565E4F700B8122A /* Info.plist */,
+				F6100A832565E9F500B8122A /* GoogleService-Info.plist */,
 			);
 			path = "Pricing Right";
+			sourceTree = "<group>";
+		};
+		F6100AAC25671F4400B8122A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */,
+				F6100AAD25671F6000B8122A /* ClientsTableViewCell.xib */,
+				F6100A582565E4F500B8122A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6100AD525671FA600B8122A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6100A562565E4F500B8122A /* ViewController.swift */,
+				F6100AD92567218B00B8122A /* ClientTableViewController.swift */,
+				F6100AD625671FE000B8122A /* PopUpInputVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6100A632565E4F700B8122A /* Build configuration list for PBXNativeTarget "Pricing Right" */;
 			buildPhases = (
+				AACB683C5E85CC4DAA868445 /* [CP] Check Pods Manifest.lock */,
 				F6100A4B2565E4F500B8122A /* Sources */,
 				F6100A4C2565E4F500B8122A /* Frameworks */,
 				F6100A4D2565E4F500B8122A /* Resources */,
+				DB21A6A0A6ABA9811E55D524 /* [CP] Embed Pods Frameworks */,
+				5C0F08AA575634D15E1EC0A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +188,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6100A5F2565E4F700B8122A /* LaunchScreen.storyboard in Resources */,
+				F6100A842565E9F500B8122A /* GoogleService-Info.plist in Resources */,
 				F6100A5C2565E4F700B8122A /* Assets.xcassets in Resources */,
+				F6100AAF25671F6100B8122A /* ClientsTableViewCell.xib in Resources */,
 				F6100A5A2565E4F500B8122A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C0F08AA575634D15E1EC0A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pricing Right/Pods-Pricing Right-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pricing Right/Pods-Pricing Right-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pricing Right/Pods-Pricing Right-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AACB683C5E85CC4DAA868445 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pricing Right-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB21A6A0A6ABA9811E55D524 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pricing Right/Pods-Pricing Right-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pricing Right/Pods-Pricing Right-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pricing Right/Pods-Pricing Right-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6100A4B2565E4F500B8122A /* Sources */ = {
@@ -139,7 +263,11 @@
 			files = (
 				F6100A572565E4F500B8122A /* ViewController.swift in Sources */,
 				F6100A532565E4F500B8122A /* AppDelegate.swift in Sources */,
+				F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */,
+				F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */,
 				F6100A552565E4F500B8122A /* SceneDelegate.swift in Sources */,
+				F6100AAA2566A85C00B8122A /* Global variables.swift in Sources */,
+				F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +411,7 @@
 		};
 		F6100A642565E4F700B8122A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 265684FB411FD8CE45C52C70 /* Pods-Pricing Right.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +430,7 @@
 		};
 		F6100A652565E4F700B8122A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46A1889FEF912BAF0A70158E /* Pods-Pricing Right.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
