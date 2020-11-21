@@ -14,11 +14,11 @@ class ClientTableViewController: UITableViewController {
    
     let popViewController = PopUpInPutVC()
     var clientsForTable = NSDictionary()
-    
+    var test: Int = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        returnFunction()
         
     
         
@@ -36,17 +36,21 @@ class ClientTableViewController: UITableViewController {
     }
     
    func returnFunction() -> () {
-
+   
     getChartIndexValues() { (clients) -> () in
-
+        
         //Your code to process the results belongs here
         self.clientsForTable = clients["Clients"] as! NSDictionary
-        //print("Your result is \(self.clientsForTable ) and count \(self.clientsForTable.count)")
-        }
-    //tableView.reloadData()
+        print("Your result is \(self.clientsForTable ) and count \(self.clientsForTable.count)")
+        self.tableView.reloadData()
+      }
+    
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        print("viewdidappear\(test)")
+        
         //returnFunction()
         
         //tableView.reloadData()
@@ -63,9 +67,8 @@ class ClientTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        //returnFunction()
-        //print(clientsForTable.count)
-
+        
+        print(clientsForTable.count)
         return clientsForTable.count
     }
 
@@ -78,11 +81,11 @@ class ClientTableViewController: UITableViewController {
         let cell = Bundle.main.loadNibNamed("ClientsTableViewCell", owner: self, options: nil)?.first as! ClientsTableViewCell
         let keys = clientsForTable.allKeys
         //print(keys)
-//        let clientDic = clients[keys[indexPath.row]] as? NSDictionary
-//            cell.cityLabel.text = clientDic!["clientCity"] as? String
-//           cell.sectorLabel.text = "Tech"
-//            cell.clientSizelabel.text = clientDic!["clientSize"] as? String
-//            cell.stateLabel.text = clientDic!["clientState"] as? String
+        let clientDic = clientsForTable[keys[indexPath.row]] as? NSDictionary
+            cell.cityLabel.text = clientDic!["clientCity"] as? String
+           cell.sectorLabel.text = clientDic!["clientName:"] as? String
+            cell.clientSizelabel.text = clientDic!["clientSize"] as? String
+            cell.stateLabel.text = clientDic!["clientState"] as? String
         
         
         

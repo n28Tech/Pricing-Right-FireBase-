@@ -14,6 +14,7 @@ func getChartIndexValues(completion:@escaping (NSDictionary) -> ()) {
     ref.child("Users").child(userID!).observe(.value, with: { (snapshot) in
 
         let clients = snapshot.value as! NSDictionary
+        
         completion(clients)
         })
 
