@@ -13,10 +13,19 @@ class ClientTableViewController: UITableViewController {
     
    
     let popViewController = PopUpInPutVC()
+    var clientsForTable = NSDictionary()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
+    
+        
+        
+        //clients = loader.loadClient()
+        
+        //print(clients)
        
 
         // Uncomment the following line to preserve selection between presentations
@@ -26,8 +35,21 @@ class ClientTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+   func returnFunction() -> () {
+
+    getChartIndexValues() { (clients) -> () in
+
+        //Your code to process the results belongs here
+        self.clientsForTable = clients["Clients"] as! NSDictionary
+        //print("Your result is \(self.clientsForTable ) and count \(self.clientsForTable.count)")
+        }
+    //tableView.reloadData()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
-        tableView.reloadData()
+        //returnFunction()
+        
+        //tableView.reloadData()
         
         
     }
@@ -41,7 +63,10 @@ class ClientTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        //returnFunction()
+        //print(clientsForTable.count)
+
+        return clientsForTable.count
     }
 
     
@@ -51,23 +76,18 @@ class ClientTableViewController: UITableViewController {
         
         
         let cell = Bundle.main.loadNibNamed("ClientsTableViewCell", owner: self, options: nil)?.first as! ClientsTableViewCell
-        
-        let userID = Auth.auth().currentUser?.uid
-        ref.child(userID!).child("Clients").observeSingleEvent(of: .value, with: { (snapshot) in
-          // Get user value
-          let value = snapshot.value as? NSArray
-          print(value)
-
-          // ...
-          }) { (error) in
-            print(error.localizedDescription)
-        }
+        let keys = clientsForTable.allKeys
+        //print(keys)
+//        let clientDic = clients[keys[indexPath.row]] as? NSDictionary
+//            cell.cityLabel.text = clientDic!["clientCity"] as? String
+//           cell.sectorLabel.text = "Tech"
+//            cell.clientSizelabel.text = clientDic!["clientSize"] as? String
+//            cell.stateLabel.text = clientDic!["clientState"] as? String
         
         
-        cell.cityLabel.text = "test 1"
-        cell.sectorLabel.text = "test2"
-        cell.clientSizelabel.text = "test3"
-        cell.stateLabel.text = "test4"
+        
+        
+       
         // Configure the cell...
 
         

@@ -34,6 +34,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ethnicity: UITextField!
     
+   
+    
     
     
     override func viewDidLoad() {

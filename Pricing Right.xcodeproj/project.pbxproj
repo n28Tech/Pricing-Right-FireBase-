@@ -21,6 +21,7 @@
 		F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AD92567218B00B8122A /* ClientTableViewController.swift */; };
 		F6100ADD25674B6100B8122A /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADC25674B6100B8122A /* Prompts.swift */; };
 		F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */; };
+		F6100AE9256830FA00B8122A /* ClientLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AE8256830FA00B8122A /* ClientLoading.swift */; };
 		FDB28C9904BAEAD348F80E09 /* Pods_Pricing_Right.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924B8F6A722EF5E43649E6CD /* Pods_Pricing_Right.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		F6100AD92567218B00B8122A /* ClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewController.swift; sourceTree = "<group>"; };
 		F6100ADC25674B6100B8122A /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 		F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNilExtenstion.swift; sourceTree = "<group>"; };
+		F6100AE8256830FA00B8122A /* ClientLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,12 @@
 		F6100A512565E4F500B8122A /* Pricing Right */ = {
 			isa = PBXGroup;
 			children = (
+				F6100AE72568269E00B8122A /* Model */,
 				F6100AE22567AFE300B8122A /* SupportFiles */,
 				F6100A522565E4F500B8122A /* AppDelegate.swift */,
 				F6100A542565E4F500B8122A /* SceneDelegate.swift */,
 				F6100AD525671FA600B8122A /* Controller */,
 				F6100AAC25671F4400B8122A /* View */,
-				F6100AA92566A85C00B8122A /* Global variables.swift */,
 				F6100A5B2565E4F700B8122A /* Assets.xcassets */,
 				F6100AD425671F8000B8122A /* One_dance.ttf */,
 				F6100A5D2565E4F700B8122A /* LaunchScreen.storyboard */,
@@ -139,6 +141,15 @@
 			children = (
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F6100AE72568269E00B8122A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6100AE8256830FA00B8122A /* ClientLoading.swift */,
+				F6100AA92566A85C00B8122A /* Global variables.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 				F6100A572565E4F500B8122A /* ViewController.swift in Sources */,
 				F6100A532565E4F500B8122A /* AppDelegate.swift in Sources */,
 				F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */,
+				F6100AE9256830FA00B8122A /* ClientLoading.swift in Sources */,
 				F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */,
 				F6100A552565E4F500B8122A /* SceneDelegate.swift in Sources */,
 				F6100ADD25674B6100B8122A /* Prompts.swift in Sources */,
