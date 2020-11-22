@@ -34,80 +34,60 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ethnicity: UITextField!
     
-   
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       // ref = Database.database().reference()
-        
-                if Auth.auth().currentUser != nil {
-                    performSegue(withIdentifier: clientSegue, sender: self)
-                } else {
-                  print("nouser")
-        
-        
-                }
+    
+        if Auth.auth().currentUser != nil {
+                performSegue(withIdentifier: clientSegue, sender: self)
+            } else {
+                  
+            }
         
     }
     
     @IBAction func signUpPressed(_ sender: Any) {
-         
-        
         if (UITextField.validateAll(textFields: [emailEnterTextField, passwordEnterTextField,userNameText,businessSector,businessState,businessYears,experience,gender,ethnicity])) {
-        let email = emailEnterTextField.text!
-        let password = passwordEnterTextField.text!
-        let userName = userNameText.text!
-        let sector = businessSector.text!
-        let state = businessState.text!
-        let city = businessCity.text!
-        let busYears = businessYears.text!
-        let expYears = experience.text!
-        let gend = gender.text!
-        let ethnic = ethnicity.text
-        
-
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            let userId = (Auth.auth().currentUser?.uid)!
-            ref.child("Users").child(userId).setValue(["userName": userName, "businessSector": sector, "state":state, "city":city, "busYears":busYears, "expYears":expYears, "gender":gend, "ethnicity":ethnic])
-        }
+                
+            let email = emailEnterTextField.text!
+                let password = passwordEnterTextField.text!
+                let userName = userNameText.text!
+                let sector = businessSector.text!
+                let state = businessState.text!
+                let city = businessCity.text!
+                let busYears = businessYears.text!
+                let expYears = experience.text!
+            let gend = gender.text!
+                let ethnic = ethnicity.text
+                
+                Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                    let userId = (Auth.auth().currentUser?.uid)!
+                    ref.child("Users").child(userId).setValue(["userName": userName, "businessSector": sector, "state":state, "city":city, "busYears":busYears, "expYears":expYears, "gender":gend, "ethnicity":ethnic])
+                }
     
-        }else{
-            prompt(with: "A Form Field is empty", in: self)
-        
-
-        }
-    
+            }else{
+                prompt(with: "A Form Field is empty", in: self)
+            }
         performSegue(withIdentifier: clientSegue, sender: self)
-    
     }
     
     @IBAction func checkcurrentuser(_ sender: Any) {
-        
-
-//        if Auth.auth().currentUser != nil {
-//            let user = (Auth.auth().currentUser?.uid)!
-//            ref.child("Company").child(user).setValue(["companyName:" :"testCompany"])
-//        } else {
-//          print("nouser")
-//
-//
-//        }
-        performSegue(withIdentifier: clientSegue, sender: self)
-        
-    }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let destinationVC = segue.destination as! ClientTableViewController
-//        let userId = (Auth.auth().currentUser?.uid)!
-//           // destinationVC.userId = userId
-//
-//
-//
-//
-//    }
+        if (UITextField.validateAll(textFields: [emailEnterTextField, passwordEnterTextField])) {
+                
+                let email = emailEnterTextField.text
+                let password = passwordEnterTextField.text
     
+        
+        
+                Auth.auth().signIn(withEmail: email!, password: password!) { [weak self] authResult, error in
+                      guard let strongSelf = self else { return }
+            
+                }
+        }else{
+            prompt(with: "A email or password Field is empty", in: self)
+        }
+        
+        performSegue(withIdentifier: clientSegue, sender: self)
+    }
 
 }
 

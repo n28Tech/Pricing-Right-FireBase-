@@ -17,7 +17,6 @@ class PopUpInPutVC: UIViewController{
     let clientSize = UITextField(frame: CGRect(x: 0, y: 64, width: 200, height: 21))
     override func viewDidLoad() {
         
-       
         clientName.placeholder = "Client Name"
           self.view.addSubview(clientName)
         
@@ -39,7 +38,7 @@ class PopUpInPutVC: UIViewController{
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         title = "Input New Client"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(self.saveClient(sender:)) )
-        // It's required to set content size of popup.
+        
         contentSizeInPopup = CGSize(width: 300, height: 400)
         landscapeContentSizeInPopup = CGSize(width: 400, height: 200)
     
@@ -53,24 +52,21 @@ class PopUpInPutVC: UIViewController{
     
     
     @objc func saveClient(sender: UIBarButtonItem){
-       // self.navigationController?.popViewController(animated: true)
-        let user = (Auth.auth().currentUser?.uid)!
-        let userRef = ref.child("Users").child(user)
-        let clientRef = userRef.child("Clients")
-        let movieRefAvengers = clientRef.child(clientName.text!)
-        let dictMovieRefAvengers: [String: String] = ["clientName:" : clientName.text!, "clientCity": clientCity.text!, "clientState":clientState.text!, "clientSize": clientSize.text!]
-        movieRefAvengers.setValue(dictMovieRefAvengers)
         
+        if (UITextField.validateAll(textFields: [clientName, clientCity,clientState,clientSize])) {
+            let user = (Auth.auth().currentUser?.uid)!
+            let userRef = ref.child("Users").child(user)
+            let clientRef = userRef.child("Clients")
+            let userClientRef = clientRef.child(clientName.text!)
+            let clientInfoLoad: [String: String] = ["clientName:" : clientName.text!, "clientCity": clientCity.text!, "clientState":clientState.text!, "clientSize": clientSize.text!]
+            userClientRef.setValue(clientInfoLoad)
+            popupController?.dismiss()
         
-        
-        
-//        let user = (Auth.auth().currentUser?.uid)!
-//        let client =
-//        ref.child("Client").child(user).setValue(client)
-      // let locationRef = ref.childByAutoId()
-        //locationRef.setValue(client)
-        
-        popupController?.dismiss()
-    
+        }else{
+            prompt(with: "A Form Field is empty", in: self)
+            
+        }
+       
+
     }
 }

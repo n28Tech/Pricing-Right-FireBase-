@@ -14,5 +14,4 @@ func prompt(with message: String, in self: UIViewController){
     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     self.present(alert, animated: true)
     
-    
 }
