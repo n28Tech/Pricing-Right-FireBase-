@@ -15,10 +15,7 @@
 		F6100A5F2565E4F700B8122A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6100A5D2565E4F700B8122A /* LaunchScreen.storyboard */; };
 		F6100A842565E9F500B8122A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6100A832565E9F500B8122A /* GoogleService-Info.plist */; };
 		F6100AAA2566A85C00B8122A /* Global variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AA92566A85C00B8122A /* Global variables.swift */; };
-		F6100AAF25671F6100B8122A /* ClientsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6100AAD25671F6000B8122A /* ClientsTableViewCell.xib */; };
-		F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */; };
 		F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AD625671FE000B8122A /* PopUpInputVC.swift */; };
-		F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AD92567218B00B8122A /* ClientTableViewController.swift */; };
 		F6100ADD25674B6100B8122A /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADC25674B6100B8122A /* Prompts.swift */; };
 		F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */; };
 		F6100AE9256830FA00B8122A /* ClientLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AE8256830FA00B8122A /* ClientLoading.swift */; };
@@ -42,11 +39,8 @@
 		F6100A602565E4F700B8122A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6100A832565E9F500B8122A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6100AA92566A85C00B8122A /* Global variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global variables.swift"; sourceTree = "<group>"; };
-		F6100AAD25671F6000B8122A /* ClientsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientsTableViewCell.xib; sourceTree = "<group>"; };
-		F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsTableViewCell.swift; sourceTree = "<group>"; };
 		F6100AD425671F8000B8122A /* One_dance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = One_dance.ttf; sourceTree = "<group>"; };
 		F6100AD625671FE000B8122A /* PopUpInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpInputVC.swift; sourceTree = "<group>"; };
-		F6100AD92567218B00B8122A /* ClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewController.swift; sourceTree = "<group>"; };
 		F6100ADC25674B6100B8122A /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 		F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNilExtenstion.swift; sourceTree = "<group>"; };
 		F6100AE8256830FA00B8122A /* ClientLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoading.swift; sourceTree = "<group>"; };
@@ -123,8 +117,6 @@
 		F6100AAC25671F4400B8122A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */,
-				F6100AAD25671F6000B8122A /* ClientsTableViewCell.xib */,
 				F6D228C6256C68F2001F3960 /* DesignView.swift */,
 				F6100A582565E4F500B8122A /* Main.storyboard */,
 				F6D228C9256C7125001F3960 /* CardTableViewCell.swift */,
@@ -138,7 +130,6 @@
 				F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */,
 				F6100A562565E4F500B8122A /* ViewController.swift */,
 				F6100ADC25674B6100B8122A /* Prompts.swift */,
-				F6100AD92567218B00B8122A /* ClientTableViewController.swift */,
 				F6D228C3256C6702001F3960 /* ClientTableViewControllerwithCard.swift */,
 				F6100AD625671FE000B8122A /* PopUpInputVC.swift */,
 			);
@@ -224,7 +215,6 @@
 				F6100A5F2565E4F700B8122A /* LaunchScreen.storyboard in Resources */,
 				F6100A842565E9F500B8122A /* GoogleService-Info.plist in Resources */,
 				F6100A5C2565E4F700B8122A /* Assets.xcassets in Resources */,
-				F6100AAF25671F6100B8122A /* ClientsTableViewCell.xib in Resources */,
 				F6100A5A2565E4F500B8122A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +290,12 @@
 				F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */,
 				F6D228C4256C6702001F3960 /* ClientTableViewControllerwithCard.swift in Sources */,
 				F6100AE9256830FA00B8122A /* ClientLoading.swift in Sources */,
-				F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */,
 				F6100A552565E4F500B8122A /* SceneDelegate.swift in Sources */,
 				F6100ADD25674B6100B8122A /* Prompts.swift in Sources */,
 				F6D228CA256C7125001F3960 /* CardTableViewCell.swift in Sources */,
 				F6D228C7256C68F2001F3960 /* DesignView.swift in Sources */,
 				F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */,
 				F6100AAA2566A85C00B8122A /* Global variables.swift in Sources */,
-				F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -109,50 +108,12 @@
                         <outlet property="gender" destination="EY8-IV-SYk" id="gAo-g3-9nM"/>
                         <outlet property="passwordEnterTextField" destination="tsf-HO-Q6J" id="Jqd-18-WcD"/>
                         <outlet property="userNameText" destination="XId-f5-DXe" id="TF4-Jf-RWn"/>
-                        <segue destination="gNj-VU-1JW" kind="show" identifier="clientSegue" id="kJB-qI-0pF"/>
                         <segue destination="H6g-A4-41J" kind="show" identifier="cardSegue" id="rSY-ga-b7T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1337.68115942029" y="-642.1875"/>
-        </scene>
-        <!--Clients-->
-        <scene sceneID="XCC-w5-UbX">
-            <objects>
-                <tableViewController id="gNj-VU-1JW" customClass="ClientTableViewController" customModule="Pricing_Right" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DVI-Xp-s8N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="gDZ-wu-11W" customClass="ClientsTableViewCell" customModule="Pricing_Right">
-                                <rect key="frame" x="0.0" y="28" width="414" height="92"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gDZ-wu-11W" id="mf9-7g-q4L">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="gNj-VU-1JW" id="IQl-ZA-ARh"/>
-                            <outlet property="delegate" destination="gNj-VU-1JW" id="vMO-lZ-5lg"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Clients" id="JUF-6h-MXS">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="kAf-cA-IgU">
-                            <imageReference key="image" image="dollarsign.circle" catalog="system" symbolScale="large"/>
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="addClients:" destination="gNj-VU-1JW" id="fb7-d6-7Mc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MqA-N5-YQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2189.8550724637685" y="-642.1875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Oy-we-5oP">
