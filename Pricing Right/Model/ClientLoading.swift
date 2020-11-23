@@ -10,14 +10,17 @@ import Firebase
 
 func getChartIndexValues(completion:@escaping (NSDictionary) -> ()) {
     let userID = Auth.auth().currentUser?.uid
+     // print(userID)
+    //let manyClients = ref.child("Users").child(userID!)
     
     ref.child("Users").child(userID!).observe(.value, with: { (snapshot) in
-
+        if snapshot.exists() {
         let clients = snapshot.value as! NSDictionary
+            completion(clients)
+        }
         
-        completion(clients)
         })
-
+    
 }
 
 

@@ -17,13 +17,21 @@ class ClientTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         returnFunction()
+        
+        if Auth.auth().currentUser != nil {
+            print(Auth.auth().currentUser?.uid)
+            } else {
+                 print("no current user")
+            }
+        
+    
     
     }
     
    func returnFunction() -> () {
    
     getChartIndexValues() { (clients) -> () in
-        
+
         //Your code to process the results belongs here
         self.clientsForTable = clients["Clients"] as! NSDictionary
         self.tableView.reloadData()

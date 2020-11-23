@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         if Auth.auth().currentUser != nil {
                 performSegue(withIdentifier: clientSegue, sender: self)
             } else {
-                  
+                 print("no current user")
             }
         
     }
