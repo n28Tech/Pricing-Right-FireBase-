@@ -22,6 +22,9 @@
 		F6100ADD25674B6100B8122A /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADC25674B6100B8122A /* Prompts.swift */; };
 		F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */; };
 		F6100AE9256830FA00B8122A /* ClientLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AE8256830FA00B8122A /* ClientLoading.swift */; };
+		F6D228C4256C6702001F3960 /* ClientTableViewControllerwithCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D228C3256C6702001F3960 /* ClientTableViewControllerwithCard.swift */; };
+		F6D228C7256C68F2001F3960 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D228C6256C68F2001F3960 /* DesignView.swift */; };
+		F6D228CA256C7125001F3960 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D228C9256C7125001F3960 /* CardTableViewCell.swift */; };
 		FDB28C9904BAEAD348F80E09 /* Pods_Pricing_Right.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924B8F6A722EF5E43649E6CD /* Pods_Pricing_Right.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		F6100ADC25674B6100B8122A /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 		F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNilExtenstion.swift; sourceTree = "<group>"; };
 		F6100AE8256830FA00B8122A /* ClientLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoading.swift; sourceTree = "<group>"; };
+		F6D228C3256C6702001F3960 /* ClientTableViewControllerwithCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewControllerwithCard.swift; sourceTree = "<group>"; };
+		F6D228C6256C68F2001F3960 /* DesignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		F6D228C9256C7125001F3960 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +125,9 @@
 			children = (
 				F6100AAE25671F6100B8122A /* ClientsTableViewCell.swift */,
 				F6100AAD25671F6000B8122A /* ClientsTableViewCell.xib */,
+				F6D228C6256C68F2001F3960 /* DesignView.swift */,
 				F6100A582565E4F500B8122A /* Main.storyboard */,
+				F6D228C9256C7125001F3960 /* CardTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 				F6100A562565E4F500B8122A /* ViewController.swift */,
 				F6100ADC25674B6100B8122A /* Prompts.swift */,
 				F6100AD92567218B00B8122A /* ClientTableViewController.swift */,
+				F6D228C3256C6702001F3960 /* ClientTableViewControllerwithCard.swift */,
 				F6100AD625671FE000B8122A /* PopUpInputVC.swift */,
 			);
 			path = Controller;
@@ -289,10 +298,13 @@
 				F6100A572565E4F500B8122A /* ViewController.swift in Sources */,
 				F6100A532565E4F500B8122A /* AppDelegate.swift in Sources */,
 				F6100AD725671FE000B8122A /* PopUpInputVC.swift in Sources */,
+				F6D228C4256C6702001F3960 /* ClientTableViewControllerwithCard.swift in Sources */,
 				F6100AE9256830FA00B8122A /* ClientLoading.swift in Sources */,
 				F6100AB025671F6100B8122A /* ClientsTableViewCell.swift in Sources */,
 				F6100A552565E4F500B8122A /* SceneDelegate.swift in Sources */,
 				F6100ADD25674B6100B8122A /* Prompts.swift in Sources */,
+				F6D228CA256C7125001F3960 /* CardTableViewCell.swift in Sources */,
+				F6D228C7256C68F2001F3960 /* DesignView.swift in Sources */,
 				F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */,
 				F6100AAA2566A85C00B8122A /* Global variables.swift in Sources */,
 				F6100ADA2567218B00B8122A /* ClientTableViewController.swift in Sources */,

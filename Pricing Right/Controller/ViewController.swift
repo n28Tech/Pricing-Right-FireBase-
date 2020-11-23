@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         if Auth.auth().currentUser != nil {
-                performSegue(withIdentifier: clientSegue, sender: self)
+                performSegue(withIdentifier: cardSegue, sender: self)
             } else {
                  print("no current user")
             }
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             }else{
                 prompt(with: "A Form Field is empty", in: self)
             }
-        performSegue(withIdentifier: clientSegue, sender: self)
+        performSegue(withIdentifier: cardSegue, sender: self)
     }
     
     @IBAction func checkcurrentuser(_ sender: Any) {
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
             prompt(with: "A email or password Field is empty", in: self)
         }
         
-        performSegue(withIdentifier: clientSegue, sender: self)
+        performSegue(withIdentifier: cardSegue, sender: self)
     }
 
 }

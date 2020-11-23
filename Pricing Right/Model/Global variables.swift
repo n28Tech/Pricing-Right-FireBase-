@@ -12,6 +12,8 @@ var ref: DatabaseReference!
 
 var clientSegue = "clientSegue"
 
+var cardSegue = "cardSegue"
+
 
 
 
