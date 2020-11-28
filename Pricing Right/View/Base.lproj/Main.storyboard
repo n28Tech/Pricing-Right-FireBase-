@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jBu-Jh-mdy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KC9-ub-cJe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -8,135 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pricing Right-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pricing_Right" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="WqW-Dc-cLm">
-                                <rect key="frame" x="0.0" y="171" width="414" height="554"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5h-JH-WQJ" userLabel="Email">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-HO-Q6J" userLabel="Password">
-                                        <rect key="frame" x="0.0" y="48" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XId-f5-DXe" userLabel="User Name">
-                                        <rect key="frame" x="0.0" y="96" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Business Sector" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fzz-mg-k7R" userLabel="Business Sector">
-                                        <rect key="frame" x="0.0" y="144" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Business State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-Rz-5Et" userLabel="Business State">
-                                        <rect key="frame" x="0.0" y="192" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="address-level1"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Business City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bhi-Wn-5JZ" userLabel="Business City">
-                                        <rect key="frame" x="0.0" y="240" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="address-level2"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of years in Business" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edF-dq-stG" userLabel="number of years">
-                                        <rect key="frame" x="0.0" y="288" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter exoerience in industry" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjH-qH-qoi" userLabel="expeirence">
-                                        <rect key="frame" x="0.0" y="336" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EY8-IV-SYk" userLabel="Gender">
-                                        <rect key="frame" x="0.0" y="384" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Ethnicity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FVu-sp-wW1" userLabel="Ethnicity">
-                                        <rect key="frame" x="0.0" y="432" width="414" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaB-uE-G1V">
-                                        <rect key="frame" x="0.0" y="480" width="414" height="30"/>
-                                        <accessibility key="accessibilityConfiguration" hint="checking hint"/>
-                                        <state key="normal" title="Create new account"/>
-                                        <connections>
-                                            <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgt-ay-oVP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgo-1o-Wx9">
-                                        <rect key="frame" x="0.0" y="524" width="414" height="30"/>
-                                        <state key="normal" title="Login"/>
-                                        <connections>
-                                            <action selector="checkcurrentuser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nP1-Dc-9XJ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="WqW-Dc-cLm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6CZ-bm-fQO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WqW-Dc-cLm" secondAttribute="trailing" id="qXu-AC-aGW"/>
-                            <constraint firstItem="WqW-Dc-cLm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sK1-2p-dns"/>
-                            <constraint firstItem="WqW-Dc-cLm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x2d-D8-r9O"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Pricing Right" id="yWd-fj-xBm"/>
-                    <connections>
-                        <outlet property="businessCity" destination="Bhi-Wn-5JZ" id="2LU-lh-7Wk"/>
-                        <outlet property="businessSector" destination="Fzz-mg-k7R" id="t5u-2j-7xz"/>
-                        <outlet property="businessState" destination="TL6-Rz-5Et" id="FRq-Vi-Iu9"/>
-                        <outlet property="businessYears" destination="edF-dq-stG" id="Nfl-7Y-XK3"/>
-                        <outlet property="emailEnterTextField" destination="Y5h-JH-WQJ" id="Icw-S4-6kf"/>
-                        <outlet property="ethnicity" destination="FVu-sp-wW1" id="8gh-Dp-gTh"/>
-                        <outlet property="experience" destination="TjH-qH-qoi" id="VYU-H3-TvV"/>
-                        <outlet property="gender" destination="EY8-IV-SYk" id="gAo-g3-9nM"/>
-                        <outlet property="passwordEnterTextField" destination="tsf-HO-Q6J" id="Jqd-18-WcD"/>
-                        <outlet property="userNameText" destination="XId-f5-DXe" id="TF4-Jf-RWn"/>
-                        <segue destination="H6g-A4-41J" kind="show" identifier="cardSegue" id="rSY-ga-b7T"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1337.68115942029" y="-642.1875"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4Oy-we-5oP">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jBu-Jh-mdy" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bGi-82-uu0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.53333333333333333" green="0.60784313725490191" blue="0.45098039215686275" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="OneDance-Bold" family="One Dance" pointSize="21"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gti-fY-QPs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hQl-km-EfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="427.536231884058" y="-642.1875"/>
-        </scene>
         <!--Projects-->
         <scene sceneID="abm-F7-mcg">
             <objects>
@@ -232,13 +103,222 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSU-Qq-MHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2190" y="-36"/>
+            <point key="canvasLocation" x="2377" y="-781"/>
+        </scene>
+        <!--Pricing Right-->
+        <scene sceneID="g2S-7I-Y3W">
+            <objects>
+                <viewController id="tAj-Wi-kI1" customClass="ViewController" customModule="Pricing_Right" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I2d-Kh-uub">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kG-02-6OC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kq-2x-5Xa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="XSc-5L-ojx" userLabel="Form Stack View">
+                                                <rect key="frame" x="0.0" y="50" width="414" height="588.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="IJb-0f-Nwd" userLabel="Login Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeC-du-RpY" userLabel="Email">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cny-Bl-QFZ" userLabel="Password">
+                                                                <rect key="frame" x="0.0" y="48" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="eLY-cd-rEm" userLabel="loginButtons">
+                                                        <rect key="frame" x="0.0" y="96" width="414" height="108.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBV-BG-hXC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                                <state key="normal" title="Login"/>
+                                                                <connections>
+                                                                    <action selector="checkcurrentuser:" destination="tAj-Wi-kI1" eventType="touchUpInside" id="qGM-v4-GkO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3h-XT-DIt">
+                                                                <rect key="frame" x="0.0" y="44" width="414" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOm-8w-a1c">
+                                                                <rect key="frame" x="0.0" y="78.5" width="414" height="30"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="checking hint"/>
+                                                                <state key="normal" title="Create new account"/>
+                                                                <connections>
+                                                                    <action selector="showCreateUserForm:" destination="tAj-Wi-kI1" eventType="touchUpInside" id="5OZ-4Y-h7U"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="P3s-Yl-WIQ" userLabel="Information Stack view">
+                                                        <rect key="frame" x="0.0" y="218.5" width="414" height="370"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7R-xN-9ea" userLabel="User Name">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Business Sector" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PG4-yX-kOR" userLabel="Business Sector">
+                                                                <rect key="frame" x="0.0" y="48" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Business State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ztf-jU-KTW" userLabel="Business State">
+                                                                <rect key="frame" x="0.0" y="96" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="address-level1"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Business City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="slm-8z-Mr4" userLabel="Business City">
+                                                                <rect key="frame" x="0.0" y="144" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="address-level2"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of years in Business" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-RQ-VPR" userLabel="number of years">
+                                                                <rect key="frame" x="0.0" y="192" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter exoerience in industry" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qUV-Yz-PPn" userLabel="expeirence">
+                                                                <rect key="frame" x="0.0" y="240" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-Qf-tHn" userLabel="Gender">
+                                                                <rect key="frame" x="0.0" y="288" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Ethnicity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Dx-2b-tAJ" userLabel="Ethnicity">
+                                                                <rect key="frame" x="0.0" y="336" width="414" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="IJb-0f-Nwd" secondAttribute="trailing" id="Qtj-Rs-5AO"/>
+                                                    <constraint firstItem="P3s-Yl-WIQ" firstAttribute="leading" secondItem="XSc-5L-ojx" secondAttribute="leading" id="bjd-Ap-byT"/>
+                                                    <constraint firstItem="IJb-0f-Nwd" firstAttribute="leading" secondItem="XSc-5L-ojx" secondAttribute="leading" id="nCl-RP-Obe"/>
+                                                    <constraint firstItem="eLY-cd-rEm" firstAttribute="leading" secondItem="XSc-5L-ojx" secondAttribute="leading" id="stV-3o-Obq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eLY-cd-rEm" secondAttribute="trailing" id="tKV-dp-2im"/>
+                                                    <constraint firstAttribute="trailing" secondItem="P3s-Yl-WIQ" secondAttribute="trailing" id="uF9-fF-tlN"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="XSc-5L-ojx" firstAttribute="leading" secondItem="4kq-2x-5Xa" secondAttribute="leading" id="8CA-To-SVN"/>
+                                            <constraint firstItem="XSc-5L-ojx" firstAttribute="top" secondItem="4kq-2x-5Xa" secondAttribute="top" constant="50" id="CKd-A3-jnI"/>
+                                            <constraint firstAttribute="trailing" secondItem="XSc-5L-ojx" secondAttribute="trailing" id="HBQ-WT-AbZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4kq-2x-5Xa" firstAttribute="centerY" secondItem="8kG-02-6OC" secondAttribute="centerY" id="12j-tz-npA"/>
+                                    <constraint firstAttribute="bottom" secondItem="4kq-2x-5Xa" secondAttribute="bottom" id="6az-hz-DdW"/>
+                                    <constraint firstItem="4kq-2x-5Xa" firstAttribute="leading" secondItem="8kG-02-6OC" secondAttribute="leading" id="QHm-vk-QTS"/>
+                                    <constraint firstItem="4kq-2x-5Xa" firstAttribute="centerX" secondItem="8kG-02-6OC" secondAttribute="centerX" id="QQz-1m-zmx"/>
+                                    <constraint firstAttribute="trailing" secondItem="4kq-2x-5Xa" secondAttribute="trailing" id="RDM-vn-TvT"/>
+                                    <constraint firstItem="4kq-2x-5Xa" firstAttribute="top" secondItem="8kG-02-6OC" secondAttribute="top" id="wwv-FJ-usm"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Weg-X8-jQz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="SoI-d6-eRn"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhD-HW-dYn">
+                                <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AAK-P2-ieb"/>
+                                </constraints>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="tAj-Wi-kI1" eventType="touchUpInside" id="pge-hI-ym0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Jj-kK-dv4"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8kG-02-6OC" firstAttribute="top" secondItem="6Jj-kK-dv4" secondAttribute="top" id="8ok-bN-bsP"/>
+                            <constraint firstAttribute="bottom" secondItem="OhD-HW-dYn" secondAttribute="bottom" id="Czb-f1-8J0"/>
+                            <constraint firstAttribute="trailing" secondItem="8kG-02-6OC" secondAttribute="trailing" id="Q4r-yA-ccK"/>
+                            <constraint firstItem="6Jj-kK-dv4" firstAttribute="trailing" secondItem="OhD-HW-dYn" secondAttribute="trailing" id="gDe-db-fcB"/>
+                            <constraint firstItem="8kG-02-6OC" firstAttribute="leading" secondItem="6Jj-kK-dv4" secondAttribute="leading" id="o43-SQ-rQ6"/>
+                            <constraint firstItem="OhD-HW-dYn" firstAttribute="leading" secondItem="6Jj-kK-dv4" secondAttribute="leading" id="pqa-0M-j8m"/>
+                            <constraint firstAttribute="bottom" secondItem="8kG-02-6OC" secondAttribute="bottom" constant="34" id="rkR-XD-AlN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pricing Right" id="bR7-Hb-uxY"/>
+                    <connections>
+                        <outlet property="businessCity" destination="slm-8z-Mr4" id="ewN-9J-Vn0"/>
+                        <outlet property="businessSector" destination="PG4-yX-kOR" id="RLZ-tV-XQa"/>
+                        <outlet property="businessState" destination="ztf-jU-KTW" id="bQA-2B-x2R"/>
+                        <outlet property="businessYears" destination="Sls-RQ-VPR" id="mne-Xd-O8s"/>
+                        <outlet property="button" destination="OhD-HW-dYn" id="AWq-Ld-78i"/>
+                        <outlet property="buttonHeightConstraint" destination="AAK-P2-ieb" id="C1n-Tj-QW4"/>
+                        <outlet property="emailEnterTextField" destination="eeC-du-RpY" id="MWf-qR-Uag"/>
+                        <outlet property="ethnicity" destination="4Dx-2b-tAJ" id="JFG-0N-4bR"/>
+                        <outlet property="experience" destination="qUV-Yz-PPn" id="kJb-az-BwC"/>
+                        <outlet property="gender" destination="6DH-Qf-tHn" id="boh-Xo-6aO"/>
+                        <outlet property="informationStackView" destination="P3s-Yl-WIQ" id="WQW-Ly-YKg"/>
+                        <outlet property="loginStackView" destination="eLY-cd-rEm" id="1tG-uZ-1Yg"/>
+                        <outlet property="passwordEnterTextField" destination="cny-Bl-QFZ" id="KVL-St-DIZ"/>
+                        <outlet property="scrollView" destination="8kG-02-6OC" id="OWj-by-TtC"/>
+                        <outlet property="testView" destination="4kq-2x-5Xa" id="4Qy-xT-cuR"/>
+                        <outlet property="totalStackView" destination="XSc-5L-ojx" id="bp7-qf-EMg"/>
+                        <outlet property="userNameText" destination="w7R-xN-9ea" id="Md9-B9-fEm"/>
+                        <segue destination="H6g-A4-41J" kind="show" identifier="cardSegue" id="ubw-h3-ohD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORY-5k-6R5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="-852"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aOV-jG-DNd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KC9-ub-cJe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NOq-mO-nS9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.49911600350000002" green="0.60247558359999998" blue="0.59153044219999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.53333333329999999" green="0.60784313729999995" blue="0.45098039220000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="OneDance-Bold" family="One Dance" pointSize="21"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tAj-Wi-kI1" kind="relationship" relationship="rootViewController" id="FZw-w6-iO5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDQ-c0-8AL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="-881"/>
         </scene>
     </scenes>
     <resources>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
