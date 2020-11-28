@@ -137,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="427.536231884058" y="-642.1875"/>
         </scene>
-        <!--Clients-->
+        <!--Projects-->
         <scene sceneID="abm-F7-mcg">
             <objects>
                 <tableViewController id="H6g-A4-41J" customClass="ClientTableViewControllerwithCard" customModule="Pricing_Right" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,7 +221,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="4rw-Ba-utS"/>
-                    <navigationItem key="navigationItem" title="Clients" id="jYv-VZ-ag0">
+                    <navigationItem key="navigationItem" title="Projects" prompt="test" id="jYv-VZ-ag0">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="dollarsign.circle" catalog="system" id="1ZX-pg-Xxg">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                             <connections>

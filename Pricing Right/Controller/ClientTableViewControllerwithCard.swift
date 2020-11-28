@@ -10,7 +10,7 @@ import STPopup
 import Firebase
 
 class ClientTableViewControllerwithCard: UITableViewController {
-    let popViewController = PopUpInPutVC()
+     let popViewController = PopUpInPutVC()
     var clientsForTable = NSDictionary()
    
     
@@ -19,6 +19,8 @@ class ClientTableViewControllerwithCard: UITableViewController {
         super.viewDidLoad()
         returnFunction()
         
+                
+       
         tableView.separatorColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
     
     }

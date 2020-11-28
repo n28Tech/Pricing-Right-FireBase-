@@ -11,6 +11,9 @@ import STPopup
 import Firebase
 
 class PopUpInPutVC: UIViewController{
+    
+    
+    let screenSize = UIScreen.main.bounds
     let clientName = UITextField(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
     let clientCity = UITextField(frame: CGRect(x: 0, y: 22, width: 200, height: 21))
     let clientState = UITextField(frame: CGRect(x: 0, y: 43, width: 200, height: 21))
@@ -39,7 +42,8 @@ class PopUpInPutVC: UIViewController{
         title = "Input New Client"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(self.saveClient(sender:)) )
         
-        contentSizeInPopup = CGSize(width: 300, height: 400)
+    
+        contentSizeInPopup = CGSize(width: screenSize.width / 1.2, height: screenSize.height/1.5)
         landscapeContentSizeInPopup = CGSize(width: 400, height: 200)
     
     }
