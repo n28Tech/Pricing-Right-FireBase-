@@ -19,7 +19,6 @@ func getChartIndexValues(completion:@escaping ([NSDictionary]) -> ()) {
                         return
                     }
                     
-                    
                     let clients = (snapshot.documents.map { $0.data() })as [NSDictionary]
                     completion(clients)
                 

@@ -15,6 +15,8 @@ var clientSegue = "clientSegue"
 
 var cardSegue = "cardSegue"
 
+var footer = "footer"
+
 
 
 
