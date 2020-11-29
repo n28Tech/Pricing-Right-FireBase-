@@ -8,7 +8,8 @@
 import Foundation
 import Firebase
 
-var ref: DatabaseReference!
+
+let db = Firestore.firestore()
 
 var clientSegue = "clientSegue"
 

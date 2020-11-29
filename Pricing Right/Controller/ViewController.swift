@@ -54,6 +54,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ethnicity: UITextField!
     
+//MARK: - This is the initial load section which hides some section of the form and checks if the user is already signed in.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -70,7 +72,7 @@ class ViewController: UIViewController {
         
     }
     
-    
+   //MARK: - Styling of Login Page hiding login buttons and  reveal fulldataform if use pushes create new account button
     @IBAction func showCreateUserForm(_ sender: UIButton) {
         loginStackView.isHidden = true
         informationStackView.isHidden = false
@@ -84,10 +86,7 @@ class ViewController: UIViewController {
         
         button.bk_defaultButtonHeight = buttonHeightConstraint.constant  // Stores the default size of the button.
         button.threeDStyle()
-        
-
-        
-        
+    
     }
     @objc func hideKeyboard() {
         self.view.endEditing(true)
@@ -120,9 +119,11 @@ class ViewController: UIViewController {
     }
     
     
-    
+//MARK: - This section is signinging up or sigining in  users depending on what bunch is pressed
     
     @IBAction func signUpPressed(_ sender: Any) {
+        
+        var reff:DocumentReference? = nil
         if (UITextField.validateAll(textFields: [emailEnterTextField, passwordEnterTextField,userNameText,businessSector,businessState,businessYears,experience,gender,ethnicity])) {
                 
             let email = emailEnterTextField.text!
@@ -138,7 +139,15 @@ class ViewController: UIViewController {
                 
                 Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                     let userId = (Auth.auth().currentUser?.uid)!
-                    ref.child("Users").child(userId).setValue(["userName": userName, "businessSector": sector, "state":state, "city":city, "busYears":busYears, "expYears":expYears, "gender":gend, "ethnicity":ethnic])
+                    reff = db.collection("users").addDocument(data: ["userName": userName, "businessSector": sector, "state":state, "city":city, "busYears":busYears, "expYears":expYears, "gender":gend, "ethnicity":ethnic!,"uid":userId], completion: { (err) in
+                        if let err = err{
+                            print("Error adding document: \(err)")
+                        }else{
+                            print("Document added with ID: \(reff!.documentID)")
+
+                        }
+                    })
+                    
                 }
     
             }else{
@@ -167,7 +176,7 @@ class ViewController: UIViewController {
     }
 
 }
-//MARK: - Button Extention
+//MARK: - Button Extention to style all buttons on  this view
 extension UIButton{
     
     func threeDStyle(){

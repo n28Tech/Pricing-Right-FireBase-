@@ -18,6 +18,8 @@ class PopUpInPutVC: UIViewController{
     let clientCity = UITextField(frame: CGRect(x: 0, y: 22, width: 200, height: 21))
     let clientState = UITextField(frame: CGRect(x: 0, y: 43, width: 200, height: 21))
     let clientSize = UITextField(frame: CGRect(x: 0, y: 64, width: 200, height: 21))
+    
+//MARK: - Set up for the Pop including putting on the fields on the pop and blanking them out hwen the pop loads ane/orc appears anew
     override func viewDidLoad() {
         
         clientName.placeholder = "Client Name"
@@ -35,8 +37,15 @@ class PopUpInPutVC: UIViewController{
         clientName.text = ""
         clientSize.text = ""
         clientCity.text = ""
-        clientName.text = ""
+        clientState.text = ""
     }
+    override func viewDidAppear(_ animated: Bool) {
+        clientName.text = ""
+        clientSize.text = ""
+        clientCity.text = ""
+        clientState.text = ""
+    }
+//MARK: - setting the frame configuration for the pop-up
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         title = "Input New Client"
@@ -53,17 +62,26 @@ class PopUpInPutVC: UIViewController{
     }
     
     
-    
+//MARK: - Save Function
     
     @objc func saveClient(sender: UIBarButtonItem){
+        var reff: DocumentReference? = nil
         
         if (UITextField.validateAll(textFields: [clientName, clientCity,clientState,clientSize])) {
             let user = (Auth.auth().currentUser?.uid)!
-            let userRef = ref.child("Users").child(user)
-            let clientRef = userRef.child("Clients")
-            let userClientRef = clientRef.child(clientName.text!)
-            let clientInfoLoad: [String: String] = ["clientName:" : clientName.text!, "clientCity": clientCity.text!, "clientState":clientState.text!, "clientSize": clientSize.text!]
-            userClientRef.setValue(clientInfoLoad)
+            reff = db.collection("projects").addDocument(data: ["clientName:" : clientName.text!, "clientCity": clientCity.text!, "clientState":clientState.text!, "clientSize": Float(clientSize.text!)!,"uid":user,"lastUpdated": FieldValue.serverTimestamp()]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                } else {
+                    //should add pop let the now its saved???
+                }
+            }
+            
+            
+            
+            //
+            
+            
             popupController?.dismiss()
         
         }else{

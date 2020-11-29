@@ -8,18 +8,23 @@
 import Foundation
 import Firebase
 
-func getChartIndexValues(completion:@escaping (NSDictionary) -> ()) {
+func getChartIndexValues(completion:@escaping ([NSDictionary]) -> ()) {
     let userID = Auth.auth().currentUser?.uid
-     // print(userID)
-    //let manyClients = ref.child("Users").child(userID!)
     
-    ref.child("Users").child(userID!).observe(.value, with: { (snapshot) in
-        if snapshot.exists() {
-        let clients = snapshot.value as! NSDictionary
-            completion(clients)
-        }
-        
-        })
+            db.collection("projects")
+                .whereField("uid", isEqualTo:userID!)
+                .addSnapshotListener { querySnapshot, error in
+                    guard let snapshot = querySnapshot else {
+                        print("Error retreiving snapshots \(error!)")
+                        return
+                    }
+                    
+                    
+                    let clients = (snapshot.documents.map { $0.data() })as [NSDictionary]
+                    completion(clients)
+                
+                }
+
     
 }
 
@@ -28,18 +33,6 @@ func getChartIndexValues(completion:@escaping (NSDictionary) -> ()) {
 
 
 
-//class func loadClient(completionHandler: (genre: NSDictionary) -> ()) {
-//        let userID = Auth.auth().currentUser?.uid
-//  var clients = NSDictionary()
-//
-//
-//        ref.child("Users").child(userID!).observe(.value, with: { (snapshot) in
-//          clients = snapshot.value as! NSDictionary
-//            completionHandler(clients)
-//          })
-//
-//
-//
-//    }
+
 
 

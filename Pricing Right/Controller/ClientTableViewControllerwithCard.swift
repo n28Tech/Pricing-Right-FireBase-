@@ -10,27 +10,26 @@ import STPopup
 import Firebase
 
 class ClientTableViewControllerwithCard: UITableViewController {
-     let popViewController = PopUpInPutVC()
-    var clientsForTable = NSDictionary()
-   let q = Queries()
-    
-    
+    let popViewController = PopUpInPutVC()
+    var clientsForTable = [NSDictionary]()
+  
+//MARK: - This section is Loading all the elements that need to be load with the view, including calling the fuinction to retrieve the data
     override func viewDidLoad() {
         super.viewDidLoad()
         returnFunction()
-        q.byState()
-                
+        
        
-        tableView.separatorColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+tableView.separatorColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
     
     }
     
+ //MARK: - this section retries data from the FirebaseCloud database
    func returnFunction() -> () {
    
     getChartIndexValues() { (clients) -> () in
 
-        //Your code to process the results belongs here
-        self.clientsForTable = clients["Clients"] as! NSDictionary
+        
+        self.clientsForTable = clients
         self.tableView.reloadData()
       }
     
@@ -49,21 +48,21 @@ class ClientTableViewControllerwithCard: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        let keys = clientsForTable.allKeys
-        let clientDic = clientsForTable[keys[indexPath.row]] as? NSDictionary
+        
+        let clientDic = clientsForTable[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CardTableViewCell
         
-        cell.contentView.backgroundColor = UIColor(white:0.95, alpha: 1)
-          
-        cell.cityLabel.text = clientDic!["clientCity"] as? String
-          cell.sectorLabel.text = clientDic!["clientName:"] as? String
-          cell.clientSizelabel.text = clientDic!["clientSize"] as? String
-         cell.stateLabel.text = clientDic!["clientState"] as? String
+            cell.contentView.backgroundColor = UIColor(white:0.95, alpha: 1)
+        
+            cell.cityLabel.text = clientDic["clientCity"] as? String
+            cell.sectorLabel.text = clientDic["clientName:"] as? String
+            cell.clientSizelabel.text = "\(String(describing: clientDic["clientSize"]!))"
+            cell.stateLabel.text = clientDic["clientState"] as? String
         return cell
     }
     
-    
+ //MARK: - This section is the button ton add new projects to the database
     @IBAction func addClients(_ sender: UIBarButtonItem) {
         
         let popupController = STPopupController(rootViewController: popViewController)
