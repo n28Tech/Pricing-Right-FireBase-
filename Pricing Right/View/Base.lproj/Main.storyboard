@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="One_dance.ttf">
+            <string>OneDance-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Projects-->
         <scene sceneID="abm-F7-mcg">
@@ -92,7 +97,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="4rw-Ba-utS"/>
-                    <navigationItem key="navigationItem" title="Projects" prompt="test" id="jYv-VZ-ag0">
+                    <navigationItem key="navigationItem" title="Projects" id="jYv-VZ-ag0">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="dollarsign.circle" catalog="system" id="1ZX-pg-Xxg">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                             <connections>
@@ -142,6 +147,7 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBV-BG-hXC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                                <color key="backgroundColor" red="0.90980392160000001" green="0.91372549020000005" blue="0.78823529410000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                 <state key="normal" title="Login"/>
                                                                 <connections>
                                                                     <action selector="checkcurrentuser:" destination="tAj-Wi-kI1" eventType="touchUpInside" id="qGM-v4-GkO"/>
@@ -155,6 +161,7 @@
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOm-8w-a1c">
                                                                 <rect key="frame" x="0.0" y="78.5" width="414" height="30"/>
+                                                                <color key="backgroundColor" red="0.90980392160000001" green="0.91372549020000005" blue="0.78823529410000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                 <accessibility key="accessibilityConfiguration" hint="checking hint"/>
                                                                 <state key="normal" title="Create new account"/>
                                                                 <connections>
@@ -239,12 +246,15 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="SoI-d6-eRn"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhD-HW-dYn">
-                                <rect key="frame" x="0.0" y="846" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <rect key="frame" x="0.0" y="846" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.53333333329999999" green="0.60784313729999995" blue="0.45098039220000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="AAK-P2-ieb"/>
+                                    <constraint firstAttribute="height" constant="40" id="AAK-P2-ieb"/>
                                 </constraints>
-                                <state key="normal" title="Create Account"/>
+                                <fontDescription key="fontDescription" name="OneDance-Bold" family="One Dance" pointSize="13"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="signUpPressed:" destination="tAj-Wi-kI1" eventType="touchUpInside" id="pge-hI-ym0"/>
                                 </connections>
@@ -254,7 +264,7 @@
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8kG-02-6OC" firstAttribute="top" secondItem="6Jj-kK-dv4" secondAttribute="top" id="8ok-bN-bsP"/>
-                            <constraint firstAttribute="bottom" secondItem="OhD-HW-dYn" secondAttribute="bottom" id="Czb-f1-8J0"/>
+                            <constraint firstAttribute="bottom" secondItem="OhD-HW-dYn" secondAttribute="bottom" constant="10" id="Czb-f1-8J0"/>
                             <constraint firstAttribute="trailing" secondItem="8kG-02-6OC" secondAttribute="trailing" id="Q4r-yA-ccK"/>
                             <constraint firstItem="6Jj-kK-dv4" firstAttribute="trailing" secondItem="OhD-HW-dYn" secondAttribute="trailing" id="gDe-db-fcB"/>
                             <constraint firstItem="8kG-02-6OC" firstAttribute="leading" secondItem="6Jj-kK-dv4" secondAttribute="leading" id="o43-SQ-rQ6"/>
@@ -275,9 +285,11 @@
                         <outlet property="experience" destination="qUV-Yz-PPn" id="kJb-az-BwC"/>
                         <outlet property="gender" destination="6DH-Qf-tHn" id="boh-Xo-6aO"/>
                         <outlet property="informationStackView" destination="P3s-Yl-WIQ" id="WQW-Ly-YKg"/>
+                        <outlet property="loginButton" destination="bBV-BG-hXC" id="66t-9c-9Mm"/>
                         <outlet property="loginStackView" destination="eLY-cd-rEm" id="1tG-uZ-1Yg"/>
                         <outlet property="passwordEnterTextField" destination="cny-Bl-QFZ" id="KVL-St-DIZ"/>
                         <outlet property="scrollView" destination="8kG-02-6OC" id="OWj-by-TtC"/>
+                        <outlet property="showCreateForm" destination="eOm-8w-a1c" id="oi6-tf-leI"/>
                         <outlet property="testView" destination="4kq-2x-5Xa" id="4Qy-xT-cuR"/>
                         <outlet property="totalStackView" destination="XSc-5L-ojx" id="bp7-qf-EMg"/>
                         <outlet property="userNameText" destination="w7R-xN-9ea" id="Md9-B9-fEm"/>
@@ -316,9 +328,6 @@
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

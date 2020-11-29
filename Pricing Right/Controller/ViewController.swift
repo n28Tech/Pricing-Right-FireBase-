@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var showCreateForm: UIButton!
     
     
     
@@ -57,6 +59,8 @@ class ViewController: UIViewController {
         
         informationStackView.isHidden = true
         button.isHidden = true
+        loginButton.threeDStyle()
+        showCreateForm.threeDStyle()
     
         if Auth.auth().currentUser != nil {
                 performSegue(withIdentifier: cardSegue, sender: self)
@@ -79,6 +83,9 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
         
         button.bk_defaultButtonHeight = buttonHeightConstraint.constant  // Stores the default size of the button.
+        button.threeDStyle()
+        
+
         
         
     }
@@ -160,5 +167,20 @@ class ViewController: UIViewController {
     }
 
 }
-
+//MARK: - Button Extention
+extension UIButton{
+    
+    func threeDStyle(){
+        let button = self
+        button.layer.cornerRadius = 6.0;
+        button.layer.borderWidth = 0.5;
+        button.layer.shadowRadius = 5
+        button.layer.shadowOpacity = 0.8
+        button.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        
+    }
+    
+    
+}
 
