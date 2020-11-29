@@ -43,7 +43,7 @@ class PopUpInPutVC: UIViewController{
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(self.saveClient(sender:)) )
         
     
-        contentSizeInPopup = CGSize(width: screenSize.width / 1.2, height: screenSize.height/1.5)
+        contentSizeInPopup = CGSize(width: screenSize.width / 1.2, height: screenSize.height/2)
         landscapeContentSizeInPopup = CGSize(width: 400, height: 200)
     
     }

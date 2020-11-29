@@ -12,13 +12,13 @@ import Firebase
 class ClientTableViewControllerwithCard: UITableViewController {
      let popViewController = PopUpInPutVC()
     var clientsForTable = NSDictionary()
-   
+   let q = Queries()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         returnFunction()
-        
+        q.byState()
                 
        
         tableView.separatorColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)

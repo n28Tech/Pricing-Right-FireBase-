@@ -20,6 +20,7 @@
 		F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */; };
 		F6100AE9256830FA00B8122A /* ClientLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100AE8256830FA00B8122A /* ClientLoading.swift */; };
 		F63E1D9D2573280D000762DC /* buttonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E1D9C2573280D000762DC /* buttonExtention.swift */; };
+		F63E1DA025735733000762DC /* Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E1D9F25735733000762DC /* Queries.swift */; };
 		F6D228C4256C6702001F3960 /* ClientTableViewControllerwithCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D228C3256C6702001F3960 /* ClientTableViewControllerwithCard.swift */; };
 		F6D228C7256C68F2001F3960 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D228C6256C68F2001F3960 /* DesignView.swift */; };
 		F6D228CA256C7125001F3960 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D228C9256C7125001F3960 /* CardTableViewCell.swift */; };
@@ -46,6 +47,7 @@
 		F6100ADF2567AFD700B8122A /* TextFieldNilExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNilExtenstion.swift; sourceTree = "<group>"; };
 		F6100AE8256830FA00B8122A /* ClientLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoading.swift; sourceTree = "<group>"; };
 		F63E1D9C2573280D000762DC /* buttonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonExtention.swift; sourceTree = "<group>"; };
+		F63E1D9F25735733000762DC /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
 		F6D228C3256C6702001F3960 /* ClientTableViewControllerwithCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewControllerwithCard.swift; sourceTree = "<group>"; };
 		F6D228C6256C68F2001F3960 /* DesignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
 		F6D228C9256C7125001F3960 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				F6100AE8256830FA00B8122A /* ClientLoading.swift */,
+				F63E1D9F25735733000762DC /* Queries.swift */,
 				F6100AA92566A85C00B8122A /* Global variables.swift */,
 			);
 			path = Model;
@@ -298,6 +301,7 @@
 				F6100ADD25674B6100B8122A /* Prompts.swift in Sources */,
 				F6D228CA256C7125001F3960 /* CardTableViewCell.swift in Sources */,
 				F6D228C7256C68F2001F3960 /* DesignView.swift in Sources */,
+				F63E1DA025735733000762DC /* Queries.swift in Sources */,
 				F6100AE02567AFD700B8122A /* TextFieldNilExtenstion.swift in Sources */,
 				F6100AAA2566A85C00B8122A /* Global variables.swift in Sources */,
 			);
