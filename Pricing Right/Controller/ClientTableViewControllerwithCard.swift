@@ -12,7 +12,7 @@ import Firebase
 class ClientTableViewControllerwithCard: UITableViewController {
     let popViewController = PopUpInPutVC()
     var clientsForTable = [NSDictionary]()
-    
+    var singleProject = NSDictionary()
   
 //MARK: - This section is Loading all the elements that need to be load with the view, including calling the fuinction to retrieve the data
     override func viewDidLoad() {
@@ -68,18 +68,39 @@ tableView.separatorColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.
         return cell
     }
     
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+        
+        
+        singleProject = clientsForTable[indexPath.row]
+        
+      performSegue(withIdentifier:"outcomes", sender: self)
+        
+       
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! OutcomesTableViewController
+        destVC.projectData = singleProject as! [String : Any]
+        
+            
+        
+    }
+    
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let cartFooter = Bundle.main.loadNibNamed("footerTableViewCell", owner: self, options: nil)?.first as! footerTableViewCell
+       
         var sum = 0
         for clientSive in clientsForTable{
             sum += Int(clientSive["clientSize"] as! Float)
 
         }
-
-
         let sumTest = "\(sum)"
-        
-        print(sum)
         cartFooter.totalRevLabel.text = sumTest.currencyFormatting()
         return cartFooter
     }
@@ -96,18 +117,4 @@ tableView.separatorColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.
 
 }
 
-//MARK: - extenstion for string currency translation
-extension String {
-    // formatting text for currency textField
-    func currencyFormatting() -> String {
-        if let value = Double(self) {
-            let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
-            formatter.maximumFractionDigits = 2
-            if let str = formatter.string(for: value) {
-                return str
-            }
-        }
-        return ""
-    }
-}
+

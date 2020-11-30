@@ -105,10 +105,42 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="yBr-XA-bjv" kind="show" identifier="outcomes" id="clL-mT-jBC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSU-Qq-MHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="-781"/>
+            <point key="canvasLocation" x="-223" y="305"/>
+        </scene>
+        <!--Outcomes Table View Controller-->
+        <scene sceneID="CZ1-Yk-ElH">
+            <objects>
+                <tableViewController id="yBr-XA-bjv" customClass="OutcomesTableViewController" customModule="Pricing_Right" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jWo-9f-YB3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="zvl-dd-jbM">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zvl-dd-jbM" id="rK1-SD-ot0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yBr-XA-bjv" id="rae-qd-Ufo"/>
+                            <outlet property="delegate" destination="yBr-XA-bjv" id="NeY-hK-lNz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="BC8-3u-Zqs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3z-OW-X9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853" y="-785"/>
         </scene>
         <!--Pricing Right-->
         <scene sceneID="g2S-7I-Y3W">
@@ -298,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORY-5k-6R5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1713" y="-852"/>
+            <point key="canvasLocation" x="-638" y="-474"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aOV-jG-DNd">
@@ -321,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDQ-c0-8AL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055" y="-881"/>
+            <point key="canvasLocation" x="-1371" y="-785"/>
         </scene>
     </scenes>
     <resources>

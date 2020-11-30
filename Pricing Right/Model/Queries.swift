@@ -8,7 +8,26 @@
 import Foundation
 import Firebase
 
-struct Queries {
+
     
-}
+
+    func getbyLocationData(location:String, completion:@escaping ([NSDictionary]) -> ()) {
+       
+        
+                db.collection("projects")
+                    .whereField("clientState", isEqualTo:location)
+                    .addSnapshotListener { querySnapshot, error in
+                        guard let snapshot = querySnapshot else {
+                            print("Error retreiving snapshots \(error!)")
+                            return
+                        }
+                        
+                        let clients = (snapshot.documents.map { $0.data() })as [NSDictionary]
+                        completion(clients)
+                    
+                    }
+
+
+
+ }
 

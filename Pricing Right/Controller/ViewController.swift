@@ -64,11 +64,11 @@ class ViewController: UIViewController {
         loginButton.threeDStyle()
         showCreateForm.threeDStyle()
     
-//        if Auth.auth().currentUser != nil {
-//                performSegue(withIdentifier: cardSegue, sender: self)
-//            } else {
-//                 print("no current user")
-//            }
+        if Auth.auth().currentUser != nil {
+                performSegue(withIdentifier: cardSegue, sender: self)
+            } else {
+                 print("no current user")
+            }
         
     }
     
